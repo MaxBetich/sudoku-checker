@@ -11,5 +11,20 @@ export default function Puzzle(inputArray1, inputArray2, inputArray3, inputArray
 };
 
 Puzzle.prototype.lengthChecker = function() {
-
+  let outputArray = [];
+  //const testArray = [this.array1.value, this.array2.value, this.array3.value, this.array4.value, this.array5.value, this.array6.value, this.array7.value, this.array8.value, this.array9.value];
+  // testArray.forEach(element => {
+  //   if (element.length !== 9) {
+  //     outputArray.push(false);
+  //   } else {
+  //     outputArray.push(true);
+  //   };
+  // });
+  const testArray = this.array1;
+  if (testArray.length !== 9) {
+    outputArray.push(false);
+  } else {
+    outputArray.push(true);
+  };
+  return outputArray;
 };

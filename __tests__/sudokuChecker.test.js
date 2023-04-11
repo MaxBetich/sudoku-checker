@@ -23,7 +23,8 @@ describe('Puzzle', () => {
 
   test('should check if input array length equals 9', () => {
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const newPuzzle = new Puzzle(array);
-    expect(newPuzzle.array1.lengthChecker()).toEqual(true);
+    const newPuzzle = new Puzzle(array, [2], [3], [4], [5], [6], [7], [8], [9]);
+    const lengthCheckerOutput = newPuzzle.lengthChecker();
+    expect(lengthCheckerOutput).toEqual([true]);
   });
 })
