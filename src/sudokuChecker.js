@@ -43,15 +43,34 @@ Puzzle.prototype.lengthChecker = function() {
 
 Puzzle.prototype.numberChecker = function()  {
   const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const sampleArray = [2, 3, 7, 8, 2, 5, 6, 9, 1];
+  const testArray1 = this.array1;
+  const testArray2 = this.array2;
+  const testArray3 = this.array3;
+  const testArray4 = this.array4;
+  const testArray5 = this.array5;
+  const testArray6 = this.array6;
+  const testArray7 = this.array7;
+  const testArray8 = this.array8;
+  const testArray9 = this.array9;
+  const inputArray = [testArray1, testArray2, testArray3, testArray4, testArray5, testArray6, testArray7, testArray8, testArray9];
+  let outputArray = [];
 
-  for (let i = 0; i < numberArray.length; i++) {
-    if (sampleArray.includes(numberArray[i])) {
-      
-    }
-  }
-
-  return numberOfVowels;
+  inputArray.forEach(element => {
+    let individualArray = [];
+    for (let i = 0; i < numberArray.length; i++) {
+      if (element.includes(numberArray[i])) {
+        individualArray.push(true);
+      } else {
+        individualArray.push(false);
+      };
+    };
+    if (individualArray.includes(false)) {
+      outputArray.push(false);
+    } else {
+      outputArray.push(true);
+    };
+  })
+  return outputArray;
 };
 
 
