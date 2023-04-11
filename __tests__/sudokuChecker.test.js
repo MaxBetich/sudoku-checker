@@ -27,4 +27,19 @@ describe('Puzzle', () => {
     const lengthCheckerOutput = newPuzzle.lengthChecker();
     expect(lengthCheckerOutput).toEqual([true]);
   });
+
+  test('should check if every input array length equals 9', () => {
+    const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray5 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray7 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
+    const lengthCheckerOutput = newPuzzle.lengthChecker();
+    expect(lengthCheckerOutput).toEqual([true, true, true, true, true, true, true, true, true]);
+  });
 })
