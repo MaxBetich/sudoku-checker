@@ -73,5 +73,82 @@ Puzzle.prototype.numberChecker = function()  {
   return outputArray;
 };
 
+Puzzle.prototype.verticalGenerator = function() {
+  const testArray1 = this.array1;
+  const testArray2 = this.array2;
+  const testArray3 = this.array3;
+  const testArray4 = this.array4;
+  const testArray5 = this.array5;
+  const testArray6 = this.array6;
+  const testArray7 = this.array7;
+  const testArray8 = this.array8;
+  const testArray9 = this.array9;
+  const horizontalArrays = [testArray1, testArray2, testArray3, testArray4, testArray5, testArray6, testArray7, testArray8, testArray9];
+  
+  let testArrayA = [];
+  horizontalArrays.forEach(element => {
+    testArrayA.push(element[0]);
+  });
+  this.arrayA = testArrayA;
+  
+  let testArrayB = [];
+  horizontalArrays.forEach(element => {
+    testArrayB.push(element[1]);
+  });
+  this.arrayB = testArrayB;
+    
+  let testArrayC = [];
+  horizontalArrays.forEach(element => {
+    testArrayC.push(element[2]);
+  });
+  this.arrayC = testArrayC;
+  
+  let testArrayD = [];
+  horizontalArrays.forEach(element => {
+    testArrayD.push(element[3]);
+  });
+  this.arrayD = testArrayD;
+    
+  let testArrayE = [];
+  horizontalArrays.forEach(element => {
+    testArrayE.push(element[4]);
+  });
+  this.arrayE = testArrayE;
+  
+  let testArrayF = [];
+  horizontalArrays.forEach(element => {
+    testArrayF.push(element[5]);
+  });
+  this.arrayF = testArrayF;
+    
+  let testArrayG = [];
+  horizontalArrays.forEach(element => {
+    testArrayG.push(element[6]);
+  });
+  this.arrayG = testArrayG;
+    
+  let testArrayH = [];
+  horizontalArrays.forEach(element => {
+    testArrayH.push(element[7]);
+  });
+  this.arrayH = testArrayH;
+  
+  let testArrayI = [];
+  horizontalArrays.forEach(element => {
+    testArrayI.push(element[8]);
+  });
+  this.arrayI = testArrayI;
+}
 
 
+// square1 = arrays1,2,3  [0,1,2]  
+// square2 = arrays1,2,3  [3,4,5]  
+// square3 = arrays1,2,3  [6,7,8]
+
+// square4 = arrays4,5,6  [0,1,2]  
+// square5 = arrays4,5,6  [3,4,5] 
+// square6 = arrays4,5,6  [6,7,8]
+
+// square7 = arrays7,8,9  [0,1,2] 
+// square8 = arrays7,8,9  [3,4,5] 
+// square9 = arrays7,8,9  [6,7,8]

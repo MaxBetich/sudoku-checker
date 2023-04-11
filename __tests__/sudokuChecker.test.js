@@ -82,15 +82,15 @@ describe('Puzzle', () => {
   });
 
   test('should create 9 arrays by taking the value of each input array at each index from 0 to 8', () => {
-    const inputArray1 = [1, 3, 3, 4, 5, 6, 7, 8, 9];
-    const inputArray2 = [1, 2, 4, 4, 5, 6, 7, 8, 9];
-    const inputArray3 = [1, 2, 3, 5, 5, 6, 7, 8, 9];
-    const inputArray4 = [1, 2, 3, 4, 6, 6, 7, 8, 9];
-    const inputArray5 = [1, 2, 3, 4, 5, 7, 7, 8, 9];
-    const inputArray6 = [1, 2, 3, 4, 5, 6, 8, 8, 9];
-    const inputArray7 = [1, 2, 3, 4, 5, 6, 7, 9, 9];
-    const inputArray8 = [1, 1, 3, 4, 5, 6, 7, 8, 9];
-    const inputArray9 = [2, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray5 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray7 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
     newPuzzle.verticalGenerator();
     expect(newPuzzle.arrayA).toEqual([1, 1, 1, 1, 1, 1, 1, 1, 1]);
@@ -103,4 +103,17 @@ describe('Puzzle', () => {
     expect(newPuzzle.arrayH).toEqual([8, 8, 8, 8, 8, 8, 8, 8, 8]);
     expect(newPuzzle.arrayI).toEqual([9, 9, 9, 9, 9, 9, 9, 9, 9]);
   });
+
+  test('should create 9 arrays by dividing the input arrays into 3x3 squares', () => {
+    const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray5 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray7 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
+  })
 });
