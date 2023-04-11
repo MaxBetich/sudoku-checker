@@ -21,13 +21,6 @@ describe('Puzzle', () => {
     expect(newPuzzle.array9).toEqual([9]);
   });
 
-  test('should check if input array length equals 9', () => {
-    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const newPuzzle = new Puzzle(array, [2], [3], [4], [5], [6], [7], [8], [9]);
-    const lengthCheckerOutput = newPuzzle.lengthChecker();
-    expect(lengthCheckerOutput).toEqual([true]);
-  });
-
   test('should check if every input array length equals 9', () => {
     const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const inputArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -41,5 +34,35 @@ describe('Puzzle', () => {
     const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
     const lengthCheckerOutput = newPuzzle.lengthChecker();
     expect(lengthCheckerOutput).toEqual([true, true, true, true, true, true, true, true, true]);
+  });
+
+  test('should check if every input array length !== 9', () => {
+    const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray2 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray3 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray4 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray5 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray6 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray7 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray8 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const inputArray9 = [1, 2, 3, 4, 5, 6, 7, 8];
+    const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
+    const lengthCheckerOutput = newPuzzle.lengthChecker();
+    expect(lengthCheckerOutput).toEqual([false, false, false, false, false, false, false, false, false]);
+  });
+
+  test('should check if every input array contains the numbers 1 through 9', () => {
+    const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray5 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray7 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const inputArray9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
+    const numberCheckerOutput = newPuzzle.numberChecker();
+    expect(numberCheckerOutput).toEqual([true, true, true, true, true, true, true, true, true]);
   });
 })
