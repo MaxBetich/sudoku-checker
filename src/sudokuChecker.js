@@ -140,6 +140,92 @@ Puzzle.prototype.verticalGenerator = function() {
   this.arrayI = testArrayI;
 }
 
+Puzzle.prototype.squareGenerator = function() {
+  const testArray1 = this.array1;
+  const testArray2 = this.array2;
+  const testArray3 = this.array3;
+  const testArray4 = this.array4;
+  const testArray5 = this.array5;
+  const testArray6 = this.array6;
+  const testArray7 = this.array7;
+  const testArray8 = this.array8;
+  const testArray9 = this.array9;
+  const horizontalArrays1 = [testArray1, testArray2, testArray3];
+  const horizontalArrays2 = [testArray4, testArray5, testArray6];
+  const horizontalArrays3 = [testArray7, testArray8, testArray9];
+  
+  let testSquare1 = [];
+  horizontalArrays1.forEach(element => {
+    testSquare1.push(element[0]);
+    testSquare1.push(element[1]);
+    testSquare1.push(element[2]);
+  });
+  this.square1 = testSquare1;
+  console.log(testSquare1);
+  let testSquare2 = [];
+  horizontalArrays1.forEach(element => {
+    testSquare2.push(element[3]);
+    testSquare2.push(element[4]);
+    testSquare2.push(element[5]);
+  });
+  this.square2 = testSquare2;
+
+  let testSquare3 = [];
+  horizontalArrays1.forEach(element => {
+    testSquare3.push(element[6]);
+    testSquare3.push(element[7]);
+    testSquare3.push(element[8]);
+  });
+  this.square3 = testSquare3;
+
+  let testSquare4 = [];
+  horizontalArrays2.forEach(element => {
+    testSquare4.push(element[0]);
+    testSquare4.push(element[1]);
+    testSquare4.push(element[2]);
+  });
+  this.square4 = testSquare4;
+
+  let testSquare5 = [];
+  horizontalArrays2.forEach(element => {
+    testSquare5.push(element[3]);
+    testSquare5.push(element[4]);
+    testSquare5.push(element[5]);
+  });
+  this.square5 = testSquare5;
+  
+  let testSquare6 = [];
+  horizontalArrays2.forEach(element => {
+    testSquare6.push(element[6]);
+    testSquare6.push(element[7]);
+    testSquare6.push(element[8]);
+  });
+  this.square6 = testSquare6;
+  
+  let testSquare7 = [];
+  horizontalArrays3.forEach(element => {
+    testSquare7.push(element[0]);
+    testSquare7.push(element[1]);
+    testSquare7.push(element[2]);
+  });
+  this.square7 = testSquare7;
+
+  let testSquare8 = [];
+  horizontalArrays3.forEach(element => {
+    testSquare8.push(element[3]);
+    testSquare8.push(element[4]);
+    testSquare8.push(element[5]);
+  });
+  this.square8 = testSquare8;
+
+  let testSquare9 = [];
+  horizontalArrays3.forEach(element => {
+    testSquare9.push(element[6]);
+    testSquare9.push(element[7]);
+    testSquare9.push(element[8]);
+  });
+  this.square9 = testSquare9;
+};
 
 // square1 = arrays1,2,3  [0,1,2]  
 // square2 = arrays1,2,3  [3,4,5]  

@@ -115,5 +115,15 @@ describe('Puzzle', () => {
     const inputArray8 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const inputArray9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const newPuzzle = new Puzzle(inputArray1, inputArray2, inputArray3, inputArray4, inputArray5, inputArray6, inputArray7, inputArray8, inputArray9);
+    newPuzzle.squareGenerator();
+    expect(newPuzzle.square1).toEqual([1, 2, 3, 1, 2, 3, 1, 2, 3]);
+    expect(newPuzzle.square2).toEqual([4, 5, 6, 4, 5, 6, 4, 5, 6]);
+    expect(newPuzzle.square3).toEqual([7, 8, 9, 7, 8, 9, 7, 8, 9]);
+    expect(newPuzzle.square4).toEqual([1, 2, 3, 1, 2, 3, 1, 2, 3]);
+    expect(newPuzzle.square5).toEqual([4, 5, 6, 4, 5, 6, 4, 5, 6]);
+    expect(newPuzzle.square6).toEqual([7, 8, 9, 7, 8, 9, 7, 8, 9]);
+    expect(newPuzzle.square7).toEqual([1, 2, 3, 1, 2, 3, 1, 2, 3]);
+    expect(newPuzzle.square8).toEqual([4, 5, 6, 4, 5, 6, 4, 5, 6]);
+    expect(newPuzzle.square9).toEqual([7, 8, 9, 7, 8, 9, 7, 8, 9]);
   })
 });
