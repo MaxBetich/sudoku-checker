@@ -9,3 +9,7 @@ export default function Puzzle(inputArray1, inputArray2, inputArray3, inputArray
   this.array8 = inputArray8;
   this.array9 = inputArray9;
 };
+
+Puzzle.prototype.lengthChecker = function() {
+
+};

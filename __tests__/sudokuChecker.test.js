@@ -20,4 +20,10 @@ describe('Puzzle', () => {
     expect(newPuzzle.array8).toEqual([8]);
     expect(newPuzzle.array9).toEqual([9]);
   });
+
+  test('should check if input array length equals 9', () => {
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const newPuzzle = new Puzzle(array);
+    expect(newPuzzle.array1.lengthChecker()).toEqual(true);
+  });
 })
